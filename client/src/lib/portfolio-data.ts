@@ -4,12 +4,12 @@ export const portfolioData = {
       title: "Dork-AI",
       description: "SaaS platform with powerful, integrated all-in-one AI tools for content creation and developers. Built with Next.js, integrated with OpenAI, Replicate AI, and Stripe.",
       image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
-      gradient: "linear-gradient(135deg, var(--warm-gold), var(--warm-coral))",
-      titleColor: "var(--warm-gold)",
+      gradient: "linear-gradient(135deg, var(--aqua-primary), var(--aqua-light))",
+      titleColor: "var(--aqua-primary)",
       technologies: [
-        { name: "TypeScript", color: "var(--warm-coral)" },
-        { name: "Next.js", color: "var(--warm-gold)" },
-        { name: "AI APIs", color: "var(--warm-amber)" }
+        { name: "TypeScript", color: "var(--aqua-light)" },
+        { name: "Next.js", color: "var(--aqua-primary)" },
+        { name: "AI APIs", color: "var(--indigo-accent)" }
       ],
       period: "2023 – present",
       link: "https://github.com/paragpurandare/generative_Ai_saas"
@@ -18,12 +18,12 @@ export const portfolioData = {
       title: "Nivesh Token",
       description: "Blockchain/Web3 crowdfunding platform for startups with automated smart contracts. Features ERC720 tokens and IPFS-based certificates for donors.",
       image: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
-      gradient: "linear-gradient(135deg, var(--warm-amber), var(--warm-rose))",
-      titleColor: "var(--warm-amber)",
+      gradient: "linear-gradient(135deg, var(--indigo-accent), var(--aqua-light))",
+      titleColor: "var(--indigo-accent)",
       technologies: [
-        { name: "Solidity", color: "var(--warm-amber)" },
-        { name: "Thirdweb SDK", color: "var(--warm-coral)" },
-        { name: "IPFS", color: "var(--warm-gold)" }
+        { name: "Solidity", color: "var(--indigo-accent)" },
+        { name: "Thirdweb SDK", color: "var(--aqua-light)" },
+        { name: "IPFS", color: "var(--aqua-primary)" }
       ],
       period: "2022"
     },
@@ -31,12 +31,12 @@ export const portfolioData = {
       title: "Promptify",
       description: "AI-powered platform for sharing and discovering creative prompts. Built with React, Next.js, and Tailwind CSS with Next Auth integration.",
       image: "https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
-      gradient: "linear-gradient(135deg, var(--warm-coral), var(--warm-gold))",
-      titleColor: "var(--warm-coral)",
+      gradient: "linear-gradient(135deg, var(--aqua-light), var(--aqua-primary))",
+      titleColor: "var(--aqua-light)",
       technologies: [
-        { name: "React", color: "var(--warm-gold)" },
-        { name: "Next.js", color: "var(--warm-coral)" },
-        { name: "Tailwind CSS", color: "var(--warm-amber)" }
+        { name: "React", color: "var(--aqua-primary)" },
+        { name: "Next.js", color: "var(--aqua-light)" },
+        { name: "Tailwind CSS", color: "var(--indigo-accent)" }
       ],
       period: "2023 – present"
     },
@@ -83,7 +83,7 @@ export const portfolioData = {
   skillCategories: [
     {
       title: "Frontend Development",
-      color: "var(--warm-gold)",
+      color: "var(--aqua-primary)",
       type: "progress",
       skills: [
         { name: "React", level: 95 },
@@ -93,7 +93,7 @@ export const portfolioData = {
     },
     {
       title: "Backend Development",
-      color: "var(--warm-coral)",
+      color: "var(--aqua-light)",
       type: "progress",
       skills: [
         { name: "Node.js", level: 88 },
@@ -103,7 +103,7 @@ export const portfolioData = {
     },
     {
       title: "Blockchain & AI",
-      color: "var(--warm-amber)",
+      color: "var(--indigo-accent)",
       type: "progress",
       skills: [
         { name: "Solidity", level: 80 },
@@ -113,7 +113,7 @@ export const portfolioData = {
     },
     {
       title: "Development Tools",
-      color: "var(--warm-rose)",
+      color: "var(--aqua-primary)",
       type: "badges",
       items: [
         "Git/GitHub", "VS Code", "Figma", "Postman", "Jupyter", "Canva", "GitHub Copilot", "ChatGPT"
@@ -121,7 +121,7 @@ export const portfolioData = {
     },
     {
       title: "Professional Certifications",
-      color: "var(--warm-purple)",
+      color: "var(--aqua-light)",
       type: "list",
       items: [
         "Backend Development and APIs - FreeCodeCamp (Comprehensive Node.js, Express, MongoDB certification)",
@@ -132,7 +132,7 @@ export const portfolioData = {
     },
     {
       title: "Languages Spoken",
-      color: "#d946ef",
+      color: "var(--indigo-accent)",
       type: "languages",
       languages: [
         { name: "English", level: 5, description: "Native proficiency - Professional communication" },

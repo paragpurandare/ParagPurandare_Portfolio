@@ -38,14 +38,14 @@ export default function HeroSection() {
           <div className="flex justify-center space-x-6 flex-wrap gap-4">
             <Button
               onClick={() => scrollToSection('projects')}
-              className="glass-effect px-8 py-3 rounded-full hover:bg-[var(--warm-gold)] hover:text-black transition-all duration-300 transform hover:scale-105 border-0"
+              className="glass-effect px-8 py-3 rounded-full hover:bg-[var(--aqua-primary)] hover:text-black transition-all duration-300 transform hover:scale-105 border-0"
             >
               View My Work
             </Button>
             <Button
               onClick={() => scrollToSection('contact')}
               variant="outline"
-              className="border-2 border-[var(--warm-coral)] px-8 py-3 rounded-full hover:bg-[var(--warm-coral)] hover:text-black transition-all duration-300 transform hover:scale-105"
+              className="border-2 border-[var(--indigo-accent)] px-8 py-3 rounded-full hover:bg-[var(--indigo-accent)] hover:text-white transition-all duration-300 transform hover:scale-105"
             >
               Get In Touch
             </Button>
@@ -55,8 +55,8 @@ export default function HeroSection() {
       
       {/* Parallax elements */}
       <div className="absolute inset-0 parallax-layer parallax-back opacity-30">
-        <div className="absolute top-20 left-10 w-32 h-32 bg-gradient-to-r from-[var(--warm-gold)] to-[var(--warm-coral)] opacity-20 transform rotate-45 animate-float"></div>
-        <div className="absolute bottom-40 right-20 w-24 h-24 bg-gradient-to-r from-[var(--warm-amber)] to-[var(--warm-rose)] opacity-20 transform rotate-12 animate-float" style={{animationDelay: '1s'}}></div>
+        <div className="absolute top-20 left-10 w-32 h-32 bg-gradient-to-r from-[var(--aqua-primary)] to-[var(--aqua-light)] opacity-20 transform rotate-45 animate-float"></div>
+        <div className="absolute bottom-40 right-20 w-24 h-24 bg-gradient-to-r from-[var(--indigo-accent)] to-[var(--aqua-primary)] opacity-20 transform rotate-12 animate-float" style={{animationDelay: '1s'}}></div>
       </div>
     </section>
   );

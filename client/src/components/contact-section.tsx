@@ -32,10 +32,10 @@ export default function ContactSection() {
   ];
 
   const stats = [
-    { value: '8.64', label: 'CPI', color: 'var(--warm-gold)' },
-    { value: '6+', label: 'Projects', color: 'var(--warm-coral)' },
-    { value: '3', label: 'Leadership Roles', color: 'var(--warm-amber)' },
-    { value: '4', label: 'Certifications', color: 'var(--warm-purple)' }
+    { value: '8.64', label: 'CPI', color: 'var(--aqua-primary)' },
+    { value: '6+', label: 'Projects', color: 'var(--aqua-light)' },
+    { value: '3', label: 'Leadership Roles', color: 'var(--indigo-accent)' },
+    { value: '4', label: 'Certifications', color: 'var(--aqua-primary)' }
   ];
 
   return (
@@ -46,7 +46,7 @@ export default function ContactSection() {
           <div className="grid md:grid-cols-2 gap-12">
             <Card className="glass-effect border-[var(--glass-border)] bg-transparent">
               <CardContent className="p-8">
-                <h3 className="text-2xl font-bold mb-6" style={{color: 'var(--warm-gold)'}}>
+                <h3 className="text-2xl font-bold mb-6" style={{color: 'var(--aqua-primary)'}}>
                   Let's Collaborate
                 </h3>
                 <p className="mb-6 leading-relaxed" style={{color: 'var(--text-secondary)'}}>
@@ -56,23 +56,23 @@ export default function ContactSection() {
                 
                 <div className="space-y-4">
                   <div className="flex items-center">
-                    <i className="fas fa-envelope mr-4 text-xl" style={{color: 'var(--warm-coral)'}}></i>
+                    <i className="fas fa-envelope mr-4 text-xl" style={{color: 'var(--aqua-light)'}}></i>
                     <a 
                       href="mailto:paragpurandare50@gmail.com" 
                       className="transition-colors"
                       style={{color: 'var(--text-secondary)'}}
-                      onMouseOver={(e) => e.currentTarget.style.color = 'var(--warm-coral)'}
+                      onMouseOver={(e) => e.currentTarget.style.color = 'var(--aqua-light)'}
                       onMouseOut={(e) => e.currentTarget.style.color = 'var(--text-secondary)'}
                     >
                       paragpurandare50@gmail.com
                     </a>
                   </div>
                   <div className="flex items-center">
-                    <i className="fas fa-phone mr-4 text-xl" style={{color: 'var(--warm-gold)'}}></i>
+                    <i className="fas fa-phone mr-4 text-xl" style={{color: 'var(--aqua-primary)'}}></i>
                     <span style={{color: 'var(--text-secondary)'}}>+91 7972319116</span>
                   </div>
                   <div className="flex items-center">
-                    <i className="fas fa-map-marker-alt mr-4 text-xl" style={{color: 'var(--warm-amber)'}}></i>
+                    <i className="fas fa-map-marker-alt mr-4 text-xl" style={{color: 'var(--indigo-accent)'}}></i>
                     <span style={{color: 'var(--text-secondary)'}}>Pune, Maharashtra, India</span>
                   </div>
                 </div>
