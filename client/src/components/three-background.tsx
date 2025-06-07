@@ -50,14 +50,14 @@ export default function ThreeBackground() {
       positions[i * 3 + 1] = (Math.random() - 0.5) * 100;
       positions[i * 3 + 2] = (Math.random() - 0.5) * 100;
 
-      // Warm colors
+      // Midnight & Aqua colors
       const colorChoice = Math.random();
       if (colorChoice < 0.33) {
-        colors[i * 3] = 1; colors[i * 3 + 1] = 0.72; colors[i * 3 + 2] = 0.3; // warm-gold
+        colors[i * 3] = 0.133; colors[i * 3 + 1] = 0.827; colors[i * 3 + 2] = 0.933; // aqua-primary
       } else if (colorChoice < 0.66) {
-        colors[i * 3] = 1; colors[i * 3 + 1] = 0.5; colors[i * 3 + 2] = 0.3; // warm-coral
+        colors[i * 3] = 0.490; colors[i * 3 + 1] = 0.827; colors[i * 3 + 2] = 0.988; // aqua-light
       } else {
-        colors[i * 3] = 0.93; colors[i * 3 + 1] = 0.55; colors[i * 3 + 2] = 0.77; // warm-rose
+        colors[i * 3] = 0.145; colors[i * 3 + 1] = 0.388; colors[i * 3 + 2] = 0.922; // indigo-accent
       }
     }
 

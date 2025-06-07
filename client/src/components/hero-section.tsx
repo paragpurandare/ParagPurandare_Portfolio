@@ -14,7 +14,7 @@ export default function HeroSection() {
       <div className="container mx-auto px-6 text-center z-10">
         <div className="animate-slide-up">
           {/* Professional headshot */}
-          <div className="w-32 h-32 mx-auto mb-8 rounded-full overflow-hidden border-4 border-[var(--warm-gold)] animate-glow">
+          <div className="w-32 h-32 mx-auto mb-8 rounded-full overflow-hidden border-4 border-[var(--aqua-primary)] animate-glow">
             <img 
               src={profileImage} 
               alt="Parag Purandare" 
@@ -26,7 +26,7 @@ export default function HeroSection() {
             Parag Purandare
           </h1>
           
-          <p className="text-xl md:text-2xl mb-6" style={{color: 'var(--text-secondary)'}}>
+          <p className="text-xl md:text-2xl mb-6 font-medium" style={{color: 'var(--text-primary)'}}>
             Data Tool Designer & Full Stack Developer
           </p>
           

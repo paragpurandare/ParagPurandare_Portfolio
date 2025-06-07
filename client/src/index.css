@@ -24,19 +24,18 @@
   --ring: hsl(20, 14.3%, 4.1%);
   --radius: 0.5rem;
 
-  /* Custom portfolio colors - Warm aesthetic scheme */
-  --warm-gold: hsl(45, 85%, 65%);
-  --warm-amber: hsl(35, 90%, 60%);
-  --warm-coral: hsl(16, 85%, 70%);
-  --warm-rose: hsl(350, 75%, 68%);
-  --warm-purple: hsl(280, 65%, 75%);
-  --dark-primary: hsl(220, 15%, 8%);
-  --dark-secondary: hsl(220, 12%, 12%);
-  --dark-tertiary: hsl(220, 10%, 16%);
-  --glass-white: hsla(45, 30%, 90%, 0.08);
-  --glass-border: hsla(45, 30%, 90%, 0.15);
-  --text-primary: hsl(45, 25%, 92%);
-  --text-secondary: hsl(45, 15%, 75%);
+  /* Custom portfolio colors - Midnight & Aqua theme */
+  --midnight-primary: #0F172A;
+  --midnight-secondary: #1E293B;
+  --midnight-tertiary: #334155;
+  --aqua-primary: #22D3EE;
+  --aqua-light: #7DD3FC;
+  --indigo-accent: #2563EB;
+  --text-primary: #F8FAFC;
+  --text-secondary: #CBD5E1;
+  --text-muted: #94A3B8;
+  --glass-white: rgba(248, 250, 252, 0.08);
+  --glass-border: rgba(248, 250, 252, 0.15);
 }
 
 .dark {
@@ -69,7 +68,7 @@
   body {
     @apply font-sans antialiased;
     font-family: 'Inter', sans-serif;
-    background: var(--dark-primary);
+    background: var(--midnight-primary);
     color: var(--text-primary);
     overflow-x: hidden;
   }
@@ -87,7 +86,7 @@
   }
 
   .text-gradient {
-    background: linear-gradient(45deg, var(--warm-gold), var(--warm-coral));
+    background: linear-gradient(45deg, var(--aqua-primary), var(--aqua-light));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -102,7 +101,7 @@
 
   .skill-progress {
     height: 100%;
-    background: linear-gradient(90deg, var(--warm-gold), var(--warm-coral));
+    background: linear-gradient(90deg, var(--aqua-primary), var(--aqua-light));
     border-radius: 3px;
     transition: width 2s ease-out;
     width: 0%;
@@ -114,11 +113,11 @@
 
   .project-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 20px 40px rgba(255, 183, 77, 0.2);
+    box-shadow: 0 20px 40px rgba(34, 211, 238, 0.2);
   }
 
   .nav-item.active {
-    background: rgba(255, 183, 77, 0.2);
+    background: rgba(34, 211, 238, 0.2);
     transform: scale(1.1);
   }
 
@@ -160,8 +159,8 @@
   }
 
   @keyframes glow {
-    0% { box-shadow: 0 0 20px rgba(255, 183, 77, 0.3); }
-    100% { box-shadow: 0 0 30px rgba(255, 183, 77, 0.6); }
+    0% { box-shadow: 0 0 20px rgba(34, 211, 238, 0.3); }
+    100% { box-shadow: 0 0 30px rgba(34, 211, 238, 0.6); }
   }
 
   @keyframes slideUp {
