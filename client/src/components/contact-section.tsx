@@ -32,10 +32,10 @@ export default function ContactSection() {
   ];
 
   const stats = [
-    { value: '8.64', label: 'CPI', color: 'var(--neon-green)' },
-    { value: '5+', label: 'Projects', color: 'var(--neon-blue)' },
-    { value: '2', label: 'Leadership Roles', color: 'var(--neon-orange)' },
-    { value: '3', label: 'Certifications', color: '#a855f7' }
+    { value: '8.64', label: 'CPI', color: 'var(--warm-gold)' },
+    { value: '6+', label: 'Projects', color: 'var(--warm-coral)' },
+    { value: '3', label: 'Leadership Roles', color: 'var(--warm-amber)' },
+    { value: '4', label: 'Certifications', color: 'var(--warm-purple)' }
   ];
 
   return (
@@ -46,31 +46,34 @@ export default function ContactSection() {
           <div className="grid md:grid-cols-2 gap-12">
             <Card className="glass-effect border-[var(--glass-border)] bg-transparent">
               <CardContent className="p-8">
-                <h3 className="text-2xl font-bold mb-6" style={{color: 'var(--neon-green)'}}>
+                <h3 className="text-2xl font-bold mb-6" style={{color: 'var(--warm-gold)'}}>
                   Let's Collaborate
                 </h3>
-                <p className="text-gray-300 mb-6 leading-relaxed">
+                <p className="mb-6 leading-relaxed" style={{color: 'var(--text-secondary)'}}>
                   Ready to build innovative data tools or discuss exciting projects? 
                   I'm always open to new opportunities and collaborations.
                 </p>
                 
                 <div className="space-y-4">
                   <div className="flex items-center">
-                    <i className="fas fa-envelope mr-4 text-xl" style={{color: 'var(--neon-blue)'}}></i>
+                    <i className="fas fa-envelope mr-4 text-xl" style={{color: 'var(--warm-coral)'}}></i>
                     <a 
                       href="mailto:paragpurandare50@gmail.com" 
-                      className="text-gray-300 hover:text-[var(--neon-blue)] transition-colors"
+                      className="transition-colors"
+                      style={{color: 'var(--text-secondary)'}}
+                      onMouseOver={(e) => e.currentTarget.style.color = 'var(--warm-coral)'}
+                      onMouseOut={(e) => e.currentTarget.style.color = 'var(--text-secondary)'}
                     >
                       paragpurandare50@gmail.com
                     </a>
                   </div>
                   <div className="flex items-center">
-                    <i className="fas fa-phone mr-4 text-xl" style={{color: 'var(--neon-green)'}}></i>
-                    <span className="text-gray-300">+91 7972319116</span>
+                    <i className="fas fa-phone mr-4 text-xl" style={{color: 'var(--warm-gold)'}}></i>
+                    <span style={{color: 'var(--text-secondary)'}}>+91 7972319116</span>
                   </div>
                   <div className="flex items-center">
-                    <i className="fas fa-map-marker-alt mr-4 text-xl" style={{color: 'var(--neon-orange)'}}></i>
-                    <span className="text-gray-300">Pune, Maharashtra, India</span>
+                    <i className="fas fa-map-marker-alt mr-4 text-xl" style={{color: 'var(--warm-amber)'}}></i>
+                    <span style={{color: 'var(--text-secondary)'}}>Pune, Maharashtra, India</span>
                   </div>
                 </div>
 
@@ -93,32 +96,32 @@ export default function ContactSection() {
 
             <Card className="glass-effect border-[var(--glass-border)] bg-transparent">
               <CardContent className="p-8">
-                <h3 className="text-2xl font-bold mb-6" style={{color: 'var(--neon-blue)'}}>
+                <h3 className="text-2xl font-bold mb-6" style={{color: 'var(--warm-coral)'}}>
                   Download Resume
                 </h3>
-                <p className="text-gray-300 mb-6">
+                <p className="mb-6" style={{color: 'var(--text-secondary)'}}>
                   Get my detailed resume with complete project information, skills, and achievements.
                 </p>
                 
                 <Button
                   onClick={downloadResume}
-                  className="w-full bg-gradient-to-r from-[var(--neon-green)] to-[var(--neon-blue)] text-black font-bold py-4 px-6 rounded-xl hover:from-[var(--neon-blue)] hover:to-[var(--neon-green)] transition-all duration-300 transform hover:scale-105 flex items-center justify-center"
+                  className="w-full bg-gradient-to-r from-[var(--warm-gold)] to-[var(--warm-coral)] text-black font-bold py-4 px-6 rounded-xl hover:from-[var(--warm-coral)] hover:to-[var(--warm-gold)] transition-all duration-300 transform hover:scale-105 flex items-center justify-center"
                 >
                   <i className="fas fa-download mr-3"></i>
                   Download Resume
                 </Button>
 
                 <div className="mt-8">
-                  <h4 className="text-lg font-semibold mb-4" style={{color: 'var(--neon-orange)'}}>
+                  <h4 className="text-lg font-semibold mb-4" style={{color: 'var(--warm-amber)'}}>
                     Quick Stats
                   </h4>
                   <div className="grid grid-cols-2 gap-4 text-center">
                     {stats.map((stat, index) => (
-                      <div key={index} className="bg-gray-800 bg-opacity-50 p-4 rounded-lg">
+                      <div key={index} className="p-4 rounded-lg" style={{backgroundColor: 'var(--dark-tertiary)'}}>
                         <div className="text-2xl font-bold" style={{color: stat.color}}>
                           {stat.value}
                         </div>
-                        <div className="text-sm text-gray-400">{stat.label}</div>
+                        <div className="text-sm" style={{color: 'var(--text-secondary)'}}>{stat.label}</div>
                       </div>
                     ))}
                   </div>

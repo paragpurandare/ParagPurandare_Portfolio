@@ -70,7 +70,12 @@ export default function SkillsSection() {
                       <Badge 
                         key={itemIndex}
                         variant="outline" 
-                        className="px-3 py-2 bg-gray-800 rounded-lg text-sm border-gray-600"
+                        className="px-3 py-2 rounded-lg text-sm"
+                        style={{
+                          backgroundColor: `${category.color}15`,
+                          color: category.color,
+                          borderColor: `${category.color}40`
+                        }}
                       >
                         {item}
                       </Badge>
@@ -79,11 +84,13 @@ export default function SkillsSection() {
                 )}
                 
                 {category.type === 'list' && (
-                  <ul className="space-y-2 text-sm text-gray-300">
+                  <ul className="space-y-3 text-sm">
                     {category.items?.map((item, itemIndex) => (
-                      <li key={itemIndex} className="flex items-center">
-                        <i className="fas fa-certificate mr-2" style={{color: category.color}}></i>
-                        {item}
+                      <li key={itemIndex} className="flex items-start space-x-3">
+                        <i className="fas fa-certificate mt-1 flex-shrink-0" style={{color: category.color}}></i>
+                        <span style={{color: 'var(--text-secondary)'}} className="leading-relaxed">
+                          {item}
+                        </span>
                       </li>
                     ))}
                   </ul>

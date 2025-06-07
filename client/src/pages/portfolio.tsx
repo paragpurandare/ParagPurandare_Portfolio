@@ -25,7 +25,7 @@ export default function Portfolio() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-[var(--dark-primary)] text-white overflow-x-hidden">
+    <div className="min-h-screen bg-[var(--dark-primary)] overflow-x-hidden" style={{color: 'var(--text-primary)'}}>
       <ThreeBackground />
       <FloatingNav />
       
@@ -38,7 +38,7 @@ export default function Portfolio() {
       {/* Footer */}
       <footer className="py-8 border-t border-[var(--glass-border)]">
         <div className="container mx-auto px-6 text-center">
-          <p className="text-gray-400">
+          <p style={{color: 'var(--text-secondary)'}}>
             © 2024 Parag Purandare. Built with passion using React, Three.js & Modern Web Technologies.
           </p>
         </div>
