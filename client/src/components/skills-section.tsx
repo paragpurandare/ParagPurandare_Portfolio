@@ -48,8 +48,8 @@ export default function SkillsSection() {
                     {category.skills?.map((skill, skillIndex) => (
                       <div key={skillIndex}>
                         <div className="flex justify-between mb-2">
-                          <span className="text-sm">{skill.name}</span>
-                          <span className="text-sm" style={{color: category.color}}>
+                          <span className="text-sm font-medium" style={{color: 'var(--text-primary)'}}>{skill.name}</span>
+                          <span className="text-sm font-semibold" style={{color: category.color}}>
                             {skill.level}%
                           </span>
                         </div>
@@ -90,20 +90,28 @@ export default function SkillsSection() {
                 )}
                 
                 {category.type === 'languages' && (
-                  <div className="space-y-3">
+                  <div className="space-y-4">
                     {category.languages?.map((lang, langIndex) => (
-                      <div key={langIndex} className="flex justify-between items-center">
-                        <span className="text-sm">{lang.name}</span>
-                        <div className="flex space-x-1">
-                          {[...Array(5)].map((_, starIndex) => (
-                            <div 
-                              key={starIndex}
-                              className={`w-3 h-3 rounded-full ${
-                                starIndex < lang.level ? 'bg-pink-400' : 'bg-gray-600'
-                              }`}
-                            ></div>
-                          ))}
+                      <div key={langIndex} className="space-y-2">
+                        <div className="flex justify-between items-center">
+                          <span className="font-medium" style={{color: 'var(--text-primary)'}}>{lang.name}</span>
+                          <div className="flex space-x-1">
+                            {[...Array(5)].map((_, starIndex) => (
+                              <div 
+                                key={starIndex}
+                                className={`w-3 h-3 rounded-full ${
+                                  starIndex < lang.level ? '' : 'bg-gray-600'
+                                }`}
+                                style={starIndex < lang.level ? {backgroundColor: category.color} : {}}
+                              ></div>
+                            ))}
+                          </div>
                         </div>
+                        {lang.description && (
+                          <p className="text-xs italic" style={{color: 'var(--text-secondary)'}}>
+                            {lang.description}
+                          </p>
+                        )}
                       </div>
                     ))}
                   </div>

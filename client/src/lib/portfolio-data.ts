@@ -4,12 +4,12 @@ export const portfolioData = {
       title: "Dork-AI",
       description: "SaaS platform with powerful, integrated all-in-one AI tools for content creation and developers. Built with Next.js, integrated with OpenAI, Replicate AI, and Stripe.",
       image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
-      gradient: "linear-gradient(135deg, var(--neon-green), var(--neon-blue))",
-      titleColor: "var(--neon-green)",
+      gradient: "linear-gradient(135deg, var(--warm-gold), var(--warm-coral))",
+      titleColor: "var(--warm-gold)",
       technologies: [
-        { name: "TypeScript", color: "var(--neon-blue)" },
-        { name: "Next.js", color: "var(--neon-green)" },
-        { name: "AI APIs", color: "var(--neon-orange)" }
+        { name: "TypeScript", color: "var(--warm-coral)" },
+        { name: "Next.js", color: "var(--warm-gold)" },
+        { name: "AI APIs", color: "var(--warm-amber)" }
       ],
       period: "2023 – present",
       link: "https://github.com/paragpurandare/generative_Ai_saas"
@@ -18,12 +18,12 @@ export const portfolioData = {
       title: "Nivesh Token",
       description: "Blockchain/Web3 crowdfunding platform for startups with automated smart contracts. Features ERC720 tokens and IPFS-based certificates for donors.",
       image: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
-      gradient: "linear-gradient(135deg, var(--neon-orange), var(--neon-orange-light))",
-      titleColor: "var(--neon-orange)",
+      gradient: "linear-gradient(135deg, var(--warm-amber), var(--warm-rose))",
+      titleColor: "var(--warm-amber)",
       technologies: [
-        { name: "Solidity", color: "var(--neon-orange)" },
-        { name: "Thirdweb SDK", color: "var(--neon-blue)" },
-        { name: "IPFS", color: "var(--neon-green)" }
+        { name: "Solidity", color: "var(--warm-amber)" },
+        { name: "Thirdweb SDK", color: "var(--warm-coral)" },
+        { name: "IPFS", color: "var(--warm-gold)" }
       ],
       period: "2022"
     },
@@ -31,12 +31,12 @@ export const portfolioData = {
       title: "Promptify",
       description: "AI-powered platform for sharing and discovering creative prompts. Built with React, Next.js, and Tailwind CSS with Next Auth integration.",
       image: "https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
-      gradient: "linear-gradient(135deg, var(--neon-blue), var(--neon-green))",
-      titleColor: "var(--neon-blue)",
+      gradient: "linear-gradient(135deg, var(--warm-coral), var(--warm-gold))",
+      titleColor: "var(--warm-coral)",
       technologies: [
-        { name: "React", color: "var(--neon-green)" },
-        { name: "Next.js", color: "var(--neon-blue)" },
-        { name: "Tailwind CSS", color: "var(--neon-orange)" }
+        { name: "React", color: "var(--warm-gold)" },
+        { name: "Next.js", color: "var(--warm-coral)" },
+        { name: "Tailwind CSS", color: "var(--warm-amber)" }
       ],
       period: "2023 – present"
     },
@@ -83,7 +83,7 @@ export const portfolioData = {
   skillCategories: [
     {
       title: "Frontend Development",
-      color: "var(--neon-green)",
+      color: "var(--warm-gold)",
       type: "progress",
       skills: [
         { name: "React", level: 95 },
@@ -93,17 +93,17 @@ export const portfolioData = {
     },
     {
       title: "Backend Development",
-      color: "var(--neon-blue)",
+      color: "var(--warm-coral)",
       type: "progress",
       skills: [
         { name: "Node.js", level: 88 },
         { name: "MongoDB", level: 82 },
-        { name: "GraphQL", level: 75 }
+        { name: "Express.js", level: 85 }
       ]
     },
     {
       title: "Blockchain & AI",
-      color: "var(--neon-orange)",
+      color: "var(--warm-amber)",
       type: "progress",
       skills: [
         { name: "Solidity", level: 80 },
@@ -112,31 +112,32 @@ export const portfolioData = {
       ]
     },
     {
-      title: "Tools & Platforms",
-      color: "#a855f7",
+      title: "Development Tools",
+      color: "var(--warm-rose)",
       type: "badges",
       items: [
-        "Git/GitHub", "VS Code", "Figma", "Postman", "Jupyter", "Canva"
+        "Git/GitHub", "VS Code", "Figma", "Postman", "Jupyter", "Canva", "GitHub Copilot", "ChatGPT"
       ]
     },
     {
-      title: "Certifications",
-      color: "#10b981",
+      title: "Professional Certifications",
+      color: "var(--warm-purple)",
       type: "list",
       items: [
-        "Backend Development - FreeCodeCamp",
-        "Digital Marketing - Google",
-        "Communication Skills - LinkedIn"
+        "Backend Development and APIs - FreeCodeCamp (Comprehensive Node.js, Express, MongoDB certification)",
+        "Digital Marketing Fundamentals - Google (Complete digital marketing strategies and analytics)",
+        "Communication and Soft Skills - LinkedIn Learning & TCS iON (Professional communication in technology environments)",
+        "Instrumentation Engineering - VIT Pune (B.Tech with 8.64 CPI, specialized in modern instrumentation systems)"
       ]
     },
     {
-      title: "Languages",
-      color: "#ec4899",
+      title: "Languages Spoken",
+      color: "#d946ef",
       type: "languages",
       languages: [
-        { name: "English", level: 5 },
-        { name: "Hindi", level: 5 },
-        { name: "Marathi", level: 5 }
+        { name: "English", level: 5, description: "Native proficiency - Professional communication" },
+        { name: "Hindi", level: 5, description: "Native speaker - Complete fluency" },
+        { name: "Marathi", level: 5, description: "Mother tongue - Perfect command" }
       ]
     }
   ]
