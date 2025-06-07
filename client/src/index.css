@@ -24,15 +24,19 @@
   --ring: hsl(20, 14.3%, 4.1%);
   --radius: 0.5rem;
 
-  /* Custom portfolio colors */
-  --neon-green: hsl(152, 100%, 50%);
-  --neon-blue: hsl(195, 100%, 50%);
-  --neon-orange: hsl(20, 100%, 50%);
-  --neon-orange-light: hsl(30, 100%, 60%);
-  --dark-primary: hsl(0, 0%, 4%);
-  --dark-secondary: hsl(0, 0%, 10%);
-  --glass-white: hsla(0, 0%, 100%, 0.1);
-  --glass-border: hsla(0, 0%, 100%, 0.2);
+  /* Custom portfolio colors - Warm aesthetic scheme */
+  --warm-gold: hsl(45, 85%, 65%);
+  --warm-amber: hsl(35, 90%, 60%);
+  --warm-coral: hsl(16, 85%, 70%);
+  --warm-rose: hsl(350, 75%, 68%);
+  --warm-purple: hsl(280, 65%, 75%);
+  --dark-primary: hsl(220, 15%, 8%);
+  --dark-secondary: hsl(220, 12%, 12%);
+  --dark-tertiary: hsl(220, 10%, 16%);
+  --glass-white: hsla(45, 30%, 90%, 0.08);
+  --glass-border: hsla(45, 30%, 90%, 0.15);
+  --text-primary: hsl(45, 25%, 92%);
+  --text-secondary: hsl(45, 15%, 75%);
 }
 
 .dark {
@@ -66,7 +70,7 @@
     @apply font-sans antialiased;
     font-family: 'Inter', sans-serif;
     background: var(--dark-primary);
-    color: white;
+    color: var(--text-primary);
     overflow-x: hidden;
   }
 
@@ -83,7 +87,7 @@
   }
 
   .text-gradient {
-    background: linear-gradient(45deg, var(--neon-green), var(--neon-blue));
+    background: linear-gradient(45deg, var(--warm-gold), var(--warm-coral));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -98,7 +102,7 @@
 
   .skill-progress {
     height: 100%;
-    background: linear-gradient(90deg, var(--neon-green), var(--neon-blue));
+    background: linear-gradient(90deg, var(--warm-gold), var(--warm-coral));
     border-radius: 3px;
     transition: width 2s ease-out;
     width: 0%;
@@ -110,11 +114,11 @@
 
   .project-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 20px 40px rgba(0, 255, 136, 0.2);
+    box-shadow: 0 20px 40px rgba(255, 183, 77, 0.2);
   }
 
   .nav-item.active {
-    background: rgba(0, 255, 136, 0.2);
+    background: rgba(255, 183, 77, 0.2);
     transform: scale(1.1);
   }
 
@@ -156,8 +160,8 @@
   }
 
   @keyframes glow {
-    0% { box-shadow: 0 0 20px rgba(0, 255, 136, 0.3); }
-    100% { box-shadow: 0 0 30px rgba(0, 255, 136, 0.6); }
+    0% { box-shadow: 0 0 20px rgba(255, 183, 77, 0.3); }
+    100% { box-shadow: 0 0 30px rgba(255, 183, 77, 0.6); }
   }
 
   @keyframes slideUp {

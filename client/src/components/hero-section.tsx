@@ -14,7 +14,7 @@ export default function HeroSection() {
       <div className="container mx-auto px-6 text-center z-10">
         <div className="animate-slide-up">
           {/* Professional headshot */}
-          <div className="w-32 h-32 mx-auto mb-8 rounded-full overflow-hidden border-4 border-[var(--neon-green)] animate-glow">
+          <div className="w-32 h-32 mx-auto mb-8 rounded-full overflow-hidden border-4 border-[var(--warm-gold)] animate-glow">
             <img 
               src={profileImage} 
               alt="Parag Purandare" 
@@ -26,26 +26,26 @@ export default function HeroSection() {
             Parag Purandare
           </h1>
           
-          <p className="text-xl md:text-2xl mb-6 text-gray-300">
+          <p className="text-xl md:text-2xl mb-6" style={{color: 'var(--text-secondary)'}}>
             Data Tool Designer & Full Stack Developer
           </p>
           
-          <p className="text-lg mb-8 max-w-2xl mx-auto leading-relaxed text-gray-400">
+          <p className="text-lg mb-8 max-w-2xl mx-auto leading-relaxed" style={{color: 'var(--text-secondary)'}}>
             Crafting innovative data visualization tools and SaaS platforms that help designers find insights and trends. 
-            Specializing in AI-powered solutions with expertise in React, Next.js, and Three.js.
+            Specializing in AI-powered solutions with expertise in React, Next.js, and Three.js. Ex-Intern at Black & Veatch.
           </p>
           
           <div className="flex justify-center space-x-6 flex-wrap gap-4">
             <Button
               onClick={() => scrollToSection('projects')}
-              className="glass-effect px-8 py-3 rounded-full hover:bg-[var(--neon-green)] hover:text-black transition-all duration-300 transform hover:scale-105 border-0"
+              className="glass-effect px-8 py-3 rounded-full hover:bg-[var(--warm-gold)] hover:text-black transition-all duration-300 transform hover:scale-105 border-0"
             >
               View My Work
             </Button>
             <Button
               onClick={() => scrollToSection('contact')}
               variant="outline"
-              className="border-2 border-[var(--neon-blue)] px-8 py-3 rounded-full hover:bg-[var(--neon-blue)] hover:text-black transition-all duration-300 transform hover:scale-105"
+              className="border-2 border-[var(--warm-coral)] px-8 py-3 rounded-full hover:bg-[var(--warm-coral)] hover:text-black transition-all duration-300 transform hover:scale-105"
             >
               Get In Touch
             </Button>
