@@ -95,7 +95,7 @@ export const portfolioData = {
       color: "var(--aqua-light)",
       type: "progress",
       skills: [
-        { name: "Python", level: 90 }
+        { name: "Python", level: 90 },
         { name: "Node.js", level: 88 },
         { name: "MongoDB", level: 82 },
         { name: "Express.js", level: 85 }
@@ -107,7 +107,7 @@ export const portfolioData = {
       type: "progress",
       skills: [
         { name: "AI Integration", level: 85 },
-        { name: "Python", level: 78 }
+        { name: "Python", level: 85 }
       ]
     },
     {
