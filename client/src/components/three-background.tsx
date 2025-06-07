@@ -39,25 +39,23 @@ export default function ThreeBackground() {
     renderer.setClearColor(0x000000, 0);
     containerRef.current.appendChild(renderer.domElement);
 
-    // Create low-poly particle system
+    // Create minimal particle system
     const geometry = new THREE.BufferGeometry();
-    const particleCount = 800;
+    const particleCount = 150;
     const positions = new Float32Array(particleCount * 3);
     const colors = new Float32Array(particleCount * 3);
 
     for (let i = 0; i < particleCount; i++) {
-      positions[i * 3] = (Math.random() - 0.5) * 100;
-      positions[i * 3 + 1] = (Math.random() - 0.5) * 100;
-      positions[i * 3 + 2] = (Math.random() - 0.5) * 100;
+      positions[i * 3] = (Math.random() - 0.5) * 80;
+      positions[i * 3 + 1] = (Math.random() - 0.5) * 80;
+      positions[i * 3 + 2] = (Math.random() - 0.5) * 50;
 
-      // Midnight & Aqua colors
+      // Subtle aqua colors only
       const colorChoice = Math.random();
-      if (colorChoice < 0.33) {
+      if (colorChoice < 0.7) {
         colors[i * 3] = 0.133; colors[i * 3 + 1] = 0.827; colors[i * 3 + 2] = 0.933; // aqua-primary
-      } else if (colorChoice < 0.66) {
-        colors[i * 3] = 0.490; colors[i * 3 + 1] = 0.827; colors[i * 3 + 2] = 0.988; // aqua-light
       } else {
-        colors[i * 3] = 0.145; colors[i * 3 + 1] = 0.388; colors[i * 3 + 2] = 0.922; // indigo-accent
+        colors[i * 3] = 0.490; colors[i * 3 + 1] = 0.827; colors[i * 3 + 2] = 0.988; // aqua-light
       }
     }
 
@@ -65,10 +63,10 @@ export default function ThreeBackground() {
     geometry.setAttribute('color', new THREE.BufferAttribute(colors, 3));
 
     const material = new THREE.PointsMaterial({
-      size: 0.8,
+      size: 1.2,
       vertexColors: true,
       transparent: true,
-      opacity: 0.8
+      opacity: 0.4
     });
 
     const particles = new THREE.Points(geometry, material);
@@ -85,8 +83,8 @@ export default function ThreeBackground() {
       requestAnimationFrame(animate);
       
       if (particlesRef.current) {
-        particlesRef.current.rotation.x += 0.0003;
-        particlesRef.current.rotation.y += 0.0005;
+        particlesRef.current.rotation.x += 0.0001;
+        particlesRef.current.rotation.y += 0.0002;
       }
       
       renderer.render(scene, camera);
