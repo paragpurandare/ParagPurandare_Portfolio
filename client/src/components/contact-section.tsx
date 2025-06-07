@@ -96,7 +96,7 @@ export default function ContactSection() {
 
             <Card className="glass-effect border-[var(--glass-border)] bg-transparent">
               <CardContent className="p-8">
-                <h3 className="text-2xl font-bold mb-6" style={{color: 'var(--warm-coral)'}}>
+                <h3 className="text-2xl font-bold mb-6" style={{color: 'var(--aqua-light)'}}>
                   Download Resume
                 </h3>
                 <p className="mb-6" style={{color: 'var(--text-secondary)'}}>
@@ -105,14 +105,14 @@ export default function ContactSection() {
                 
                 <Button
                   onClick={downloadResume}
-                  className="w-full bg-gradient-to-r from-[var(--warm-gold)] to-[var(--warm-coral)] text-black font-bold py-4 px-6 rounded-xl hover:from-[var(--warm-coral)] hover:to-[var(--warm-gold)] transition-all duration-300 transform hover:scale-105 flex items-center justify-center"
+                  className="w-full bg-gradient-to-r from-[var(--aqua-primary)] to-[var(--indigo-accent)] text-white font-bold py-4 px-6 rounded-xl hover:from-[var(--indigo-accent)] hover:to-[var(--aqua-primary)] transition-all duration-300 transform hover:scale-105 flex items-center justify-center"
                 >
                   <i className="fas fa-download mr-3"></i>
                   Download Resume
                 </Button>
 
                 <div className="mt-8">
-                  <h4 className="text-lg font-semibold mb-4" style={{color: 'var(--warm-amber)'}}>
+                  <h4 className="text-lg font-semibold mb-4" style={{color: 'var(--aqua-primary)'}}>
                     Quick Stats
                   </h4>
                   <div className="grid grid-cols-2 gap-4 text-center">
