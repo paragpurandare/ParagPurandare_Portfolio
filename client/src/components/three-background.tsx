@@ -85,8 +85,8 @@ export default function ThreeBackground() {
       requestAnimationFrame(animate);
       
       if (particlesRef.current) {
-        particlesRef.current.rotation.x += 0.001;
-        particlesRef.current.rotation.y += 0.002;
+        particlesRef.current.rotation.x += 0.0003;
+        particlesRef.current.rotation.y += 0.0005;
       }
       
       renderer.render(scene, camera);

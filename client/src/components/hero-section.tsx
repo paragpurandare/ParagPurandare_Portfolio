@@ -54,9 +54,9 @@ export default function HeroSection() {
       </div>
       
       {/* Parallax elements */}
-      <div className="absolute inset-0 parallax-layer parallax-back opacity-30">
-        <div className="absolute top-20 left-10 w-32 h-32 bg-gradient-to-r from-[var(--aqua-primary)] to-[var(--aqua-light)] opacity-20 transform rotate-45 animate-float"></div>
-        <div className="absolute bottom-40 right-20 w-24 h-24 bg-gradient-to-r from-[var(--indigo-accent)] to-[var(--aqua-primary)] opacity-20 transform rotate-12 animate-float" style={{animationDelay: '1s'}}></div>
+      <div className="absolute inset-0 parallax-layer parallax-back opacity-20">
+        <div className="absolute top-20 left-10 w-32 h-32 bg-gradient-to-r from-[var(--aqua-primary)] to-[var(--aqua-light)] opacity-10 transform rotate-45 animate-float"></div>
+        <div className="absolute bottom-40 right-20 w-24 h-24 bg-gradient-to-r from-[var(--indigo-accent)] to-[var(--aqua-primary)] opacity-10 transform rotate-12 animate-float" style={{animationDelay: '1s'}}></div>
       </div>
     </section>
   );
