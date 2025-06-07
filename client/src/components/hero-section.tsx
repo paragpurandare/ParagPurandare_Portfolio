@@ -27,25 +27,24 @@ export default function HeroSection() {
           </h1>
           
           <p className="text-xl md:text-2xl mb-6 font-medium" style={{color: 'var(--text-primary)'}}>
-            Data Tool Designer & Full Stack Developer
+            Full Stack Developer
           </p>
           
           <p className="text-lg mb-8 max-w-2xl mx-auto leading-relaxed" style={{color: 'var(--text-secondary)'}}>
-            Crafting innovative data visualization tools and SaaS platforms that help designers find insights and trends. 
-            Specializing in AI-powered solutions with expertise in React, Next.js, and Three.js. Ex-Intern at Black & Veatch.
+            Love to Explore, keep updated with latest Trends and Technologies, Problem Solver, Quick Learner, Drive by Passion and Innovation and Proactive. Building Neoterik.Ai, Specializing in AI-powered(Gen Ai) solutions with expertise in Python, TensorFlow, Pytorch, LangGraph and Expertise in Full Stack development with MERN Stack and Next.js
           </p>
           
           <div className="flex justify-center space-x-6 flex-wrap gap-4">
             <Button
               onClick={() => scrollToSection('projects')}
-              className="glass-effect px-8 py-3 rounded-full hover:bg-[var(--aqua-primary)] hover:text-black transition-all duration-300 transform hover:scale-105 border-0"
+              className="glass-effect px-8 py-3 rounded-full bg-blue hover:bg-[var(--aqua-primary)] hover:text-black transition-all duration-300 transform hover:scale-105 border-0"
             >
               View My Work
             </Button>
             <Button
               onClick={() => scrollToSection('contact')}
               variant="outline"
-              className="border-2 border-[var(--indigo-accent)] px-8 py-3 rounded-full hover:bg-[var(--indigo-accent)] hover:text-white transition-all duration-300 transform hover:scale-105"
+              className="glass-effect px-8 py-3 rounded-full text-white bg-blue hover:bg-[var(--aqua-primary)] hover:text-black transition-all duration-300 transform hover:scale-105 border-0"
             >
               Get In Touch
             </Button>

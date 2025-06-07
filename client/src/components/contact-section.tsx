@@ -21,7 +21,7 @@ export default function ContactSection() {
       name: 'GitHub',
       url: 'https://github.com/paragpurandare',
       icon: 'fab fa-github',
-      color: 'bg-gray-800 hover:bg-gray-700'
+      color: 'bg-gray-400 hover:bg-gray-700'
     },
     {
       name: 'Twitter',
@@ -50,7 +50,7 @@ export default function ContactSection() {
                   Let's Collaborate
                 </h3>
                 <p className="mb-6 leading-relaxed" style={{color: 'var(--text-secondary)'}}>
-                  Ready to build innovative data tools or discuss exciting projects? 
+                  Ready to build innovative projects and discuss exciting projects? 
                   I'm always open to new opportunities and collaborations.
                 </p>
                 

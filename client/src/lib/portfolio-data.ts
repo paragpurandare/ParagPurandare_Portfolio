@@ -88,7 +88,6 @@ export const portfolioData = {
       skills: [
         { name: "React", level: 95 },
         { name: "Next.js", level: 90 },
-        { name: "Three.js", level: 85 }
       ]
     },
     {
@@ -96,17 +95,17 @@ export const portfolioData = {
       color: "var(--aqua-light)",
       type: "progress",
       skills: [
+        { name: "Python", level: 90 }
         { name: "Node.js", level: 88 },
         { name: "MongoDB", level: 82 },
         { name: "Express.js", level: 85 }
       ]
     },
     {
-      title: "Blockchain & AI",
+      title: "AI",
       color: "var(--indigo-accent)",
       type: "progress",
       skills: [
-        { name: "Solidity", level: 80 },
         { name: "AI Integration", level: 85 },
         { name: "Python", level: 78 }
       ]
@@ -116,7 +115,7 @@ export const portfolioData = {
       color: "var(--aqua-primary)",
       type: "badges",
       items: [
-        "Git/GitHub", "VS Code", "Figma", "Postman", "Jupyter", "Canva", "GitHub Copilot", "ChatGPT"
+        "Git/GitHub", "VS Code", "Cursor Ai", "Postman", "Jupyter", "Canva", "GitHub Copilot", "ChatGPT", "Mircrosoft PowerBi"
       ]
     },
     {

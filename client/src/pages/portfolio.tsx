@@ -39,7 +39,7 @@ export default function Portfolio() {
       <footer className="py-8 border-t border-[var(--glass-border)]">
         <div className="container mx-auto px-6 text-center">
           <p style={{color: 'var(--text-secondary)'}}>
-            © 2024 Parag Purandare. Built with passion using React, Three.js & Modern Web Technologies.
+            © 2024 Parag Purandare. Built with passion and innovation
           </p>
         </div>
       </footer>
