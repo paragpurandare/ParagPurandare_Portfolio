@@ -6,7 +6,7 @@ export default function ContactSection() {
     // Create download link for resume
     const link = document.createElement('a');
     link.href = '/api/resume/download';
-    link.download = 'Parag_Purandare_Resume.pdf';
+    link.download = 'Fullstack_Developer_Resume_Parag.pdf';
     link.click();
   };
 
